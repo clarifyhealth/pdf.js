@@ -1396,7 +1396,7 @@ function webViewerInitialized() {
     var queryString = document.location.search.substring(1);
     var params = parseQueryString(queryString);
     file = 'file' in params ? params.file : DEFAULT_URL;
-    validateFileURL(file);
+    /*validateFileURL(file);*/
   } else if (PDFJSDev.test('FIREFOX || MOZCENTRAL')) {
     file = window.location.href.split('#')[0];
   } else if (PDFJSDev.test('CHROME')) {
